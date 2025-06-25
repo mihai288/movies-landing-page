@@ -4,7 +4,7 @@
 html{
     font-family: poppins;
     background-color: #0f0c29;
-    height: 100%;
+    height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,7 @@ body {
   background-image: url('nbg.png'); /* înlocuiești cu ce ai tu */
 background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto; /* <--- cheia e aici */
+  background-size: cover; /* <--- cheia e aici */
   background-attachment: fixed; /* opțional, dacă vrei să rămână fixă */
     height: 100%;
   margin: 0;
