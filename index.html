@@ -41,8 +41,67 @@
 </div>
 
 <div class="trending-now">
-  <h2>Trending Now - coming soon</h2>
-  <!-- Aici poți pune conținutul secțiunii, ex: filme recomandate -->
+  <h2>Trending Now</h2>
+  <div class="wrapper">
+    <button class="arrow arrow-left" onclick="scrollPosters(-1)">&#8592;</button>
+
+    <div class="posters" id="posterContainer">
+      <img class="poster" src="poster.jpg" alt="poster" />
+      <img class="poster" src="poster.jpg" alt="poster" />
+      <img class="poster" src="poster.jpg" alt="poster" />
+      <img class="poster" src="poster.jpg" alt="poster" />
+      <img class="poster" src="poster.jpg" alt="poster" />
+        <img class="poster" src="poster.jpg" alt="poster" />
+        <img class="poster" src="poster.jpg" alt="poster" />
+        <img class="poster" src="poster.jpg" alt="poster" />
+        <img class="poster" src="poster.jpg" alt="poster" />
+        <img class="poster" src="poster.jpg" alt="poster" />
+        <img class="poster" src="poster.jpg" alt="poster" />
+
+    </div>
+
+    <button class="arrow arrow-right" onclick="scrollPosters(1)">&#8594;</button>
+  </div>
+
+  <script>
+    function scrollPosters(direction) {
+      const container = document.getElementById('posterContainer');
+      const scrollAmount = 820;
+      container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+
+
+
+    <h2 style="margin-top: 5rem;">Reasons to Join</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Enjoy on your TV</h3>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+
+        <div class="card">
+            <h3>Download your shows to watch offline</h3>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+
+        <div class="card">
+            <h3>Watch everywhere</h3>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+
+        <div class="card">
+            <h3>Create profiles for kids</h3>
+            <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+        </div>
+
+
+    </div>
 </div>
 
 
