@@ -233,3 +233,8 @@ header{
         padding: 8px;
     }
 }
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll !important;
+  }
+}
