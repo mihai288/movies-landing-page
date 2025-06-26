@@ -102,9 +102,110 @@
 
 
     </div>
+    <h2 style="margin-top: 5rem;">Frequently Asked Questions</h2>
+
+    <div class="faq-banner" >
+        <h3>What is Moviesflix?</h3>
+        <div class="faq-answer" >
+            <p>
+                Moviesflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-banner" >
+        <h3>What is Moviesflix?</h3>
+        <div class="faq-answer" >
+            <p>
+                Moviesflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-banner" >
+        <h3>What is Moviesflix?</h3>
+        <div class="faq-answer" >
+            <p>
+                Moviesflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-banner" >
+        <h3>What is Moviesflix?</h3>
+        <div class="faq-answer" >
+            <p>
+                Moviesflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll(".faq-banner");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.querySelector(".faq-answer");
+                if (answer) {
+                    answer.style.display = (answer.style.display === "none" || answer.style.display === "") ? "flex" : "none";
+                }
+            });
+        });
+
+    </script>
+
 </div>
 
-
-
 </body>
+
+<footer>
+    <div class="content" style="margin-top: 0; margin-bottom: 5rem;">
+        <p class="ready" style="font-weight: bold">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="get-started">
+        <input type="email" placeholder="Email adress" class="email common-style">
+        <a href="#" class="login-btn getstarted common-style">Get Started ></a>
+    </div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <a href="#">FAQ</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Privacy</a>
+        <a href="#">Speed Test</a>
+        <a href="#">Ad Choices</a>
+      </div>
+      <div>
+        <a href="#">Help Center</a>
+        <a href="#">Jobs</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Legal Guarantee</a>
+      </div>
+      <div>
+        <a href="#">Account</a>
+        <a href="#">Ways to Watch</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Legal Notices</a>
+      </div>
+      <div>
+        <a href="#">Media Center</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Only on Moviesflix</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <select>
+        <option>English</option>
+          <option>French</option>
+        <option>Romanian</option>
+      </select>
+      <p>Moviesflix</p>
+      <p class="captcha-note" style="color:white;">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+    </div>
+  </footer>
 </html>

@@ -4,7 +4,7 @@
 html{
     font-family: poppins;
     background-color: #0f0c29;
-    height: 100vh;
+    height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +14,7 @@ background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* <--- cheia e aici */
   background-attachment: fixed; /* opțional, dacă vrei să rămână fixă */
-    height: 100vh;
+    height: 120vh;
   margin: 0;
   padding: 0;
     width: 100%;
@@ -103,7 +103,7 @@ header{
     color: white;
     padding: 3rem 2rem;
     margin-top: 15rem;
-    height: 300vh;
+    height: 100%
     border-top: 2px solid #8d0027;
 }
 
@@ -188,7 +188,86 @@ header{
     transition: 0.2s;
     cursor: pointer;
 }
+.faq-banner{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.faq-banner h3, .faq-answer{
+    background-color: #2a2a2a;
+    padding: 20px;
+}
+.faq-banner h3{
+    transition: 0.2s;
+}
+.faq-banner h3:hover{
+    cursor: pointer;
+    background-color: #4d4d4d;
+}
+.faq-answer{
+    display: none;
+}
+.faq-banner{
+    margin-bottom: 5px;
+}
+footer {
+  padding: 40px;
+  background-color: #000;
+  font-size: 14px;
+}
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-bottom select {
+  background: transparent;
+  border: 1px solid #999;
+  color: #999;
+  padding: 5px;
+  width: 100px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.captcha-note a {
+  color: #0071eb;
+  text-decoration: none;
+}
+
+.captcha-note a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 990px) {
     .wrapper{
         margin-left: 0rem;
@@ -215,6 +294,9 @@ header{
     .ready{
         font-size: 10px;
     }
+}
+@media (max-width: 1258px) {
+
 }
 @media (max-width: 413px) {
     .content h2{
